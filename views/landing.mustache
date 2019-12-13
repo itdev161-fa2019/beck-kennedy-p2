@@ -1,0 +1,23 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <!--anytime rendering http link do triple curly brace-->
+        <img src="{{{image_profile}}}" alt="image of hacker girl character">
+        <h1>{{greeting}}</h1>
+        <p>{{introduction}}</p>
+
+        <h3>Programming languages</h3>
+        <ol>
+            {{#languages}} <!--indicates this is a loop-->
+            <li>
+                {{name}}, {{years}} year(s) of experience
+            </li>
+            {{/languages}} <!--indicates to end the loop-->
+        </ol>
+        <!-- > tells mustache its a partial-->
+        {{>form}}
+
+    </body>
+</html>
