@@ -7,9 +7,10 @@
     },
     "projects": {
         "header":"My Projects",
-        "subheader":"Take a look at my most recent work!"
+        "subheader":"Take a look at my most recent work! Although, this whole entire site is my most recent work. ;)"
     },
     "service": {
+        "description":"This entire site was created following a tutorial here: https://www.udemy.com/course/portfolio-website-with-node-js-express/",
         "webDevelopment":{
             "text": "Web Development",
             "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.",
