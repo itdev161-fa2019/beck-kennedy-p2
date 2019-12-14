@@ -5,24 +5,23 @@ const ProjectController = require('../controllers/ProjectController')
 //req localhost:3000
 //send appropros response to client
 router.get('/', (req, res) => {
+    const data = req.context //{ page:..., global:...}
+    //moved it to landing.json
+    //clear separation of concerns
+
     //instantiation
-    const projectCtr = new ProjectController();
+    const projectCtr = new ProjectController()
     projectCtr.get()
+    //this is an array
         .then(projects => {
-            console.log('Projects: ' + JSON.stringify(projects))
+            data['projects'] = projects,
             res.render('landing', data)
         })
         .catch(err => {
             res.send('oops! ' + err.message)
         })
-    
 
 
-    const data = req.context //{ page:..., global:...}
-    //moved it to landing.json
-    //clear separation of concerns
-
-    res.render('landing', data)
 })
 
 module.exports = router
