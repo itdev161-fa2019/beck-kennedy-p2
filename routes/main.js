@@ -1,19 +1,26 @@
 const vertex = require('vertex360')({site_id: process.env.TURBO_APP_ID})
 const router = vertex.router()
+const ProjectController = require('../controllers/ProjectController')
+
 //req localhost:3000
 //send appropros response to client
 router.get('/', (req, res) => {
-    const data = {
-        image_profile: 'http://123emoji.com/wp-content/uploads/2016/04/45.png',
-        greeting: 'hello! Welcome to my portfolio site!',
-        introduction: 'I am a web developer from Wisconsin.',
-        languages: [
-            {name:'javascript', years:2},
-            {name:'java', years:1},
-            {name:'c#', years:1},
-            {name: 'HTML/CSS', years:2}
-        ]
-    }
+    //instantiation
+    const projectCtr = new ProjectController();
+    projectCtr.get()
+        .then(projects => {
+            console.log('Projects: ' + JSON.stringify(projects))
+            res.render('landing', data)
+        })
+        .catch(err => {
+            res.send('oops! ' + err.message)
+        })
+    
+
+
+    const data = req.context //{ page:..., global:...}
+    //moved it to landing.json
+    //clear separation of concerns
 
     res.render('landing', data)
 })

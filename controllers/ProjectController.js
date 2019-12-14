@@ -21,7 +21,7 @@ class ProjectController extends Controller {
 			})
 		})
 	}
-
+	//get database id
 	getById(id) {
 		return new Promise((resolve, reject) => {
 			Controller.checkCollectionDB(Project.collectionName())
@@ -80,7 +80,7 @@ class ProjectController extends Controller {
 			})
 		})
 	}
-
+	//finds project by id number and removes it/clears from database
 	delete(id) {
 		return new Promise((resolve, reject) => {
 			Project.findByIdAndRemove(id)

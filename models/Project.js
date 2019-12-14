@@ -11,15 +11,17 @@
 // https://github.com/scottwrobinson/camo
 const Document = require('vertex-camo').Document
 const props = {
-  image: {type:String, default:''},
-  name: {type:String, default:'', trim:true, display:true},
-  category: {type:String, default:''},
+	//dont mix logics (this is view logic, keep it in view)
+	//template: {type:string, name:'project.mustache'},
+	image: {type:String, default:''},
+	name: {type:String, default:'', trim:true, display:true},
+	category: {type:String, default:''},
 	slug: {type:String, default:'', immutable:true},
-  preview: {type:String, default:''},
-  link: {type:String, default:''},
-  client: {type:String, default:''},
-  dateRange: {type:String, default:''},
-  description: {type:String, default:'', isHtml:true},
+	preview: {type:String, default:''},
+	link: {type:String, default:''},
+	client: {type:String, default:''},
+	dateRange: {type:String, default:''},
+	description: {type:String, default:'', isHtml:true},
 	schema: {type:String, default:'project', immutable:true},
 	dateString: {type:String, default:'', immutable:true},
 	timestamp: {type:Date, default: new Date(), immutable:true}
