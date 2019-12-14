@@ -68,7 +68,7 @@ blocksRouter.get('/', (req, res) => {
   const data = req.config // {cdn:<STRING>, global:<OBJECT>}
   res.render('blocks', data)
 })
-
+//proxies all request to cntroller using http commands get/post/put/etc
 const APIRouter = vertex.APIRouter
 const api = new APIRouter({
 	site_id: process.env.TURBO_APP_ID,

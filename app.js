@@ -25,5 +25,4 @@ app.use('/', main)
 app.use('/api', vertexRouters.api)
 app.use('/blocks', vertexRouters.blocks)
 
-
 module.exports = app
