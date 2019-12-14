@@ -43,7 +43,6 @@ router.get('/project/:slug', (req,res) => {
         .catch(err => {
             res.send('oops - ' + err.message)
         })
-
 })
 
 module.exports = router

@@ -9,13 +9,40 @@
         "header":"My Projects",
         "subheader":"Take a look at my most recent work!"
     },
-    "image_profile": "https://lh3.googleusercontent.com/oQSCnftsJsY-_WYV3ygoi1mr38dGhW0mNblTaS5H3xe8W85fqFU6AWeIDJM5sPhaYs8E4UyGyQPVywOma97v22i1bg",
-    "greeting": "Hello! My name is Beck.",
-    "introduction": "I am a web developer from Wisconsin.",
-    "languages": [
-        {"name":"Javascript", "years":2},
-        {"name":"Java", "years":1},
-        {"name":"C#", "years":1},
-        {"name":"HTML/CSS", "years":2}
-    ]
+    "service": {
+        "webDevelopment":{
+            "text": "Web Development",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.",
+            "image_feature": "https://lh3.googleusercontent.com/gZw2gibFTxpbeh3Ib9NDIZomVup18pX27yBJb7PVvLT-ickH9EsbFjcs0VhQQYJ_LT9mUUnJjRarz_CaZDxoRsP7"
+        },
+        "videoMarketing":{
+            "text":"Video Marketing",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.",
+            "image_feature":"https://lh3.googleusercontent.com/t4qKJLlVGyrQDwvUH6R9fDE9_J3gYgwL7qEoogrCuFLGn2Kkv0XEsj4-_bPXiYJP0JMZ6cuvHueX2M79vEJTjFFfASY"
+        },
+        "appDesign":{
+            "text":"App Design",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.",
+            "image_feature":"https://lh3.googleusercontent.com/uOsmQSUxTHHpkXB2B-MJk5FJK16xSEmmr_8qcbjXpkfg7udbyjYugMTe9Thq7fa3iMQe94TmcxKGKt20Jxk3m3b0ow"
+        },
+        "graphicsDesign":{
+            "text":"Graphics Design",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.",
+            "image_feature":"https://lh3.googleusercontent.com/wV5ezHwg-P-WEeG1pesrNpNBSDATqnTxr4ZTah_wld3ZXW-DbVmAXeAfq5qlyH6OvuKZttRF0nn2K0aaV8SvcI967Q"
+        },
+        "digitalMarketing":{
+            "text": "Digital Marketing",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.",
+            "image_feature": "https://lh3.googleusercontent.com/G23HGLZX7yNkzKWDe8oXRjIGgfznxgg-jKNTmtD2L4MMRPrSuI-77FcNJTK3xEyT2AbOfumIysFx-U3A78TxwbJQyw"
+        },
+        "brandingDesign":{
+            "text": "Branding Design",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, earum.",
+            "image_feature":"https://lh3.googleusercontent.com/MJwNNAhQaXFPTjlofNHh8wcL7Aftu4h0yDP5FTrGC5WZsb9iL9vEIn14Tlgh4K_1y3JIuGh13A1zVw7vdnJW23pLtZ0"
+        }
+    },
+    "contact":{
+        "header":"Let's Work Together!",
+        "subheader": "If you're interested in working with me fill out the form below and I will get back to you right away."
+    }    
 }
